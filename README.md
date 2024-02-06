@@ -1,6 +1,6 @@
 <h1 align="center">Projeto ENEM - O que os dados socioeconômicos do ENEM dizem sobre a disparidade das notas?</h1>
 
-<h3 align="left">Para uma visualização completa do notebook acesse:https://colab.research.google.com/github/joaohs1/ColabJH/blob/main/Projeto_Analise_de_dados_ENEM.ipynb</h3>
+<h6 align="left">Para uma visualização completa do notebook acesse: https://colab.research.google.com/github/joaohs1/ColabJH/blob/main/Projeto_Analise_de_dados_ENEM.ipynb</h6>
 
 <h3 align="left">1. Entendimento do problema</h3>
 
@@ -28,44 +28,62 @@ Aqui vamos fazer algumas plotagens dos dados, para criar insights e tentar respo
 
 Vamos iniciar essa etapa fazendo uma análise geral com a correlação dos dados com HEATMAP.
 
-<img src="/img/heatmap.png" align ="center">
- 
+<p align="center">
+<img src="/img/heatmap.png" >
+</p>
+
 Se correlacionarmos as notas com renda e tipo da escola, vemos que a nota de matemática tem maior interação com esses itens. Sendo assim para ser mais direto ao ponto podemos utilizar apenas a nota de matemática para nossas análises.
 
 Mas antes disso, vamos procurar a resposta de como a renda interfere em todas as notas, para isso, o BoxPlot pode ser um grande aliado.
 
 Com isso, podemos concluir se realmente podemos utilizar apenas a nota de matemática para nossas análises, e ver mais detalhadamente como é essa correlação entre NOTA x RENDA.
 
-<img src="/img/boxmat.png" align ="center">
+<p align="center">
+<img src="/img/boxmat.png">
+</p>
 
-<img src="/img/boxcien.png" align ="center">
+<p align="center">
+<img src="/img/boxcien.png">
+</p>
 
-<img src="/img/boxcieh.png" align ="center">
+<p align="center">
+<img src="/img/boxcieh.png">
+</p>
 
-<img src="/img/boxling.png" align ="center">
-    
+<p align="center">
+<img src="/img/boxling.png">
+</p>
+
 Concluímos que independente da matéria abordada, conforme a renda aumenta o desempenho nas notas também cresce. Mas com a nota de matemática podemos ver uma grande diferença nessa correlação. Sendo assim, nas próximas análises utilizaremos apenas a nota de matemática.
 
 Agora vamos levantar um histograma da idade dos participantes:
 
-<img src="/img/distrib.png" align ="center">
+<p align="center">
+<img src="/img/distrib.png">
+</p>
 
 Observamos que a maioria dos participantes são jovens de 17 até 19 anos.
 
 Agora vamos fazer análise por regiões, primeiro vamos identificar quantos 
 participantes tem por região, e depois iremos ver a média da nota de matemática por região, para entender se existe a relação número de pessoas X Região X Nota de matemática.
 
-<img src="/img/parreg.png" align ="center">
+<p align="center">
+<img src="/img/parreg.png">
+</p>
 
 Vamos ver a média de matemática por região.
 
-<img src="/img/medreg.png" align ="center">
+<p align="center">
+<img src="/img/medreg.png">
+</p>
 
 Observamos que todas as regiões estão homogêneas, e o número de participantes não está tão correlacionado a ponto de destacar ou diminuir a nota.
 
 Vamos para nossa última análise, entender se o tipo de escola influencia no desempenho (conseguimos fazer uma análise geral, visto que as regiões estão bem homogêneas).
 
-<img src="/img/privpartreg.png" align ="center">
+<p align="center">
+<img src="/img/privpartreg.png">
+</p>
  
 No geral, concluímos que o participante de escola particular consegue obter um maior desempenho na prova.
 
@@ -77,7 +95,9 @@ Sendo assim, vamos para os últimos passos desse projeto.
 
 Nesse relatório vamos colocar as visualizações mais importantes e com ele iremos avaliar e concluir esse projeto.
 
-<img src="/img/relatfin.png" align ="center">
+<p align="center">
+<img src="/img/relatfin.png">
+</p>
  
 <h3 align="left">5. Avaliação e conclusão</h3>
 
