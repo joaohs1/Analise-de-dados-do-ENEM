@@ -1,6 +1,6 @@
 <h1 align="center">Projeto ENEM - O que os dados socioeconômicos do ENEM dizem sobre a disparidade das notas?</h1>
 
-<h3 align="left">Para uma visualização completa do notebook acesse:</h3>
+<h3 align="left">Para uma visualização completa do notebook acesse:https://colab.research.google.com/github/joaohs1/ColabJH/blob/main/Projeto_Analise_de_dados_ENEM.ipynb</h3>
 
 <h3 align="left">1. Entendimento do problema</h3>
 
@@ -27,6 +27,8 @@ Aqui vamos fazer algumas plotagens dos dados, para criar insights e tentar respo
   b) Após realizar a análise acima responder qual dessas características está mais atrelada ao bom desempenho nas provas
 
 Vamos iniciar essa etapa fazendo uma análise geral com a correlação dos dados com HEATMAP.
+
+<img src="/img/heatmap.png" align ="center">
  
 Se correlacionarmos as notas com renda e tipo da escola, vemos que a nota de matemática tem maior interação com esses itens. Sendo assim para ser mais direto ao ponto podemos utilizar apenas a nota de matemática para nossas análises.
 
@@ -34,21 +36,36 @@ Mas antes disso, vamos procurar a resposta de como a renda interfere em todas as
 
 Com isso, podemos concluir se realmente podemos utilizar apenas a nota de matemática para nossas análises, e ver mais detalhadamente como é essa correlação entre NOTA x RENDA.
 
+<img src="/img/boxmat.png" align ="center">
+
+<img src="/img/boxcien.png" align ="center">
+
+<img src="/img/boxcieh.png" align ="center">
+
+<img src="/img/boxling.png" align ="center">
     
 Concluímos que independente da matéria abordada, conforme a renda aumenta o desempenho nas notas também cresce. Mas com a nota de matemática podemos ver uma grande diferença nessa correlação. Sendo assim, nas próximas análises utilizaremos apenas a nota de matemática.
 
 Agora vamos levantar um histograma da idade dos participantes:
- 
+
+<img src="/img/distrib.png" align ="center">
+
 Observamos que a maioria dos participantes são jovens de 17 até 19 anos.
 
 Agora vamos fazer análise por regiões, primeiro vamos identificar quantos 
 participantes tem por região, e depois iremos ver a média da nota de matemática por região, para entender se existe a relação número de pessoas X Região X Nota de matemática.
 
+<img src="/img/parreg.png" align ="center">
+
 Vamos ver a média de matemática por região.
+
+<img src="/img/medreg.png" align ="center">
 
 Observamos que todas as regiões estão homogêneas, e o número de participantes não está tão correlacionado a ponto de destacar ou diminuir a nota.
 
 Vamos para nossa última análise, entender se o tipo de escola influencia no desempenho (conseguimos fazer uma análise geral, visto que as regiões estão bem homogêneas).
+
+<img src="/img/privpartreg.png" align ="center">
  
 No geral, concluímos que o participante de escola particular consegue obter um maior desempenho na prova.
 
@@ -59,6 +76,8 @@ Sendo assim, vamos para os últimos passos desse projeto.
 <h3 align="left">4. Relatório da análise</h3>
 
 Nesse relatório vamos colocar as visualizações mais importantes e com ele iremos avaliar e concluir esse projeto.
+
+<img src="/img/relatfin.png" align ="center">
  
 <h3 align="left">5. Avaliação e conclusão</h3>
 
@@ -66,5 +85,5 @@ Ao longo de todo o projeto, fomos obtendo insights pontuais procurando responder
   a) Como a renda, escolaridade, idade e região interferem na nota?
   b) Qual dessas características está mais atrelada ao bom desempenho no exame?
 
-Após todos os insights, finalizamos nosso projeto com um relatório final e conseguimos concluir que quando temos dados gerais e sabemos por onde começar, uma das melhores opções é utilizar o HEATMAP (mapa de correlação), pois conseguimos observar que as notas, principalmente de matemática, têm maior correlação com a renda e em seguida, a escolaridade. Logo após, selecionamos uma nota de referência para facilitar a nossa conclusão evitando análises redundantes, com isso utilizamos a análise em BLOXPLOT para selecionar a melhor nota com o critério maior desvio relacionado a renda, sendo assim chegamos na nota de matemática. Depois, utilizamos essa nota para as demais análises, onde pudemos observar que idade (histograma) e região (gráfico de barra) não interferem significamente nas notas, pois a idade tem baixa variação e a região está com médias homogêneas, e referente a escolaridade (gráfico de barra) encontramos um desempenho relevante em quem estuda em escola particular. De os itens, a renda é a que mais se correlaciona com o desempenho dos alunos, quanto maior a renda, maior a nota.
+Após todos os insights, finalizamos nosso projeto com um relatório final e conseguimos concluir que quando temos dados gerais e sabemos por onde começar, uma das melhores opções é utilizar o HEATMAP (mapa de correlação), pois conseguimos observar que as notas, principalmente de matemática, têm maior correlação com a renda e em seguida, a escolaridade. Logo após, selecionamos uma nota de referência para facilitar a nossa conclusão evitando análises redundantes, com isso utilizamos a análise em BLOXPLOT para selecionar a melhor nota com o critério **maior desvio relacionado a renda**, sendo assim chegamos na **nota de matemática**. Depois, utilizamos essa nota para as demais análises, onde pudemos observar que **idade** (histograma) e **região** (gráfico de barra) não interferem significamente nas notas, pois a idade tem baixa variação e a região está com médias homogêneas, e referente a escolaridade (gráfico de barra) encontramos um desempenho relevante em quem estuda em escola particular. De os itens, a renda é a que mais se correlaciona com o desempenho dos alunos, quanto maior a renda, maior a nota.
 
